@@ -1,0 +1,356 @@
+*{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+body{
+height: 3500px;
+ background-color: #74acdf;
+}
+
+#container{
+  width: 98%;
+  margin:auto;
+
+}
+
+#headerFoto{
+  position: absolute;
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+/* @media (max-width: 858px){
+  #headerFoto{
+    display: block;
+  }
+} */
+
+.bar{
+  /* position: relative; */
+  display: flex;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-evenly;
+  font-size: 30px;
+  width: 97%;
+  border: 1px solid black;
+  margin: 12px;
+  
+}
+
+.navv{
+  /* position: relative; */
+  padding-top: 15px;
+  /* display: flexbox; */
+  
+}
+
+
+/* li{
+  display: inline;
+} */
+
+h1{
+  position: relative;
+  margin-top: auto;
+  margin:30px;
+  text-align: center;
+  
+  font-size: 125px;
+  border: 1px solid white;
+  padding: 100px;
+  max-height: 130px;
+  color: white;
+  z-index: 1;
+}
+
+#atTheTop{
+  position: absolute;
+  left:0;
+  top: 0;
+  width: 100%;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-columns: 4fr 7fr;
+}
+
+.wrapper > div {
+  background: #eee;
+  padding: 1em;
+  margin: 5px;
+}
+
+
+h2{
+  margin-top: 125px;
+  font-size: 52px;
+  font-style: italic;
+}
+
+
+.intro {
+  /* display: grid;
+  align-items: center;
+  height: 360px;
+  max-width: 100%; */
+  height: 100%;
+  padding-right: 20px;
+  color: black;
+}
+
+
+.introPic{
+  
+}
+
+.img-col{
+  width: 78px;
+  height: 110px;
+
+}
+
+.text-col{
+  display: inline;
+  color: black;
+  font-size: 16px;
+}
+
+.introPoints{
+  color:black;
+  display: table;
+  align-items: center;
+  height: 350px;
+  width: 100%;
+  /* grid-template-rows: repeat(3, 1fr); */
+}
+
+
+.introPoints p{
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+/* .introPoints > div:nth-child(odd){
+  background: #ddd;
+  max-width: 100%;
+  max-height: 100%;
+
+} */
+
+
+
+.main{
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+margin: 25px;
+padding: 15px;
+
+}
+
+.row{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+ .firstRow {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.secondRow{
+  display: flex;
+  justify-content: space-evenly;
+  
+  
+} 
+
+
+.box{
+flex-direction: 
+display: flex;
+display: inline-block;
+height: 200px;
+width: 320px;
+border: 1px solid red;
+/* box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5); */
+}
+
+
+
+.red{
+  background-color: red;
+}
+
+.green{
+  background-color: green;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.social{
+  display: inline;
+  max-width: 8%;
+  max-height: 8%;
+  margin: 25px;
+  padding:;
+  justify-content: center;
+
+}
+
+
+/* .atTheBottom{
+  display: inline;
+  padding: 100px;
+  margin: 110px;
+  justify-content: center;
+} */
+
+
+/* table{
+  
+  margin: auto;
+  width: 100%;
+}
+
+tr{
+  margin: 100px;
+  display: flex;
+  display: inline;
+  justify-content: center;
+  padding: 8px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 50px;
+} */
+
+/* table{
+  display: inline;
+  display: flex;
+  justify-content: center;
+
+} */
+
+
+
+/* .cuatro{
+  background-color: yellow;
+
+}
+
+.cinco{
+  background-color: yellowgreen;
+
+}
+
+.seis{
+  background-color: purple;
+
+} */
+
+/* .blurb{
+height:50px;
+width:20px;
+border: 1px solid white;
+display: inline;
+} */
+  
+
+
+
+
+/* .one{
+  grid-area: feet;
+
+}
+
+.two{
+  grid-area: shoes;
+
+}
+
+.three{
+  grid-area: steps;
+
+}
+
+.four{
+  grid-area: footer;
+
+} */
+
+
+
+
+/* #wrapper */
+  /* display: grid;
+  position: relative;
+  width: 94%;
+  margin: auto;
+  grid-template-columns: 30% 70%;
+  
+  grid-template-rows: 300px; */
+  
+  /* border: 1px solid white; 
+  justify-content: center;
+  padding: 15px;
+  grid-gap: 15px;
+  margin-top: 20px; */
+  
+  /* margin-left: 400px; */
+  /* grid-template-areas: 
+  "feet feet feet shoes shoes shoes shoes shoes"
+  "feet feet feet steps steps steps steps steps"
+  "feet feet feet footer footer footer footer footer" */
+  /* "topLeft topRight"
+  "main main main"; */
+
+ 
+  /* display: inline; */
+  /* display:grid;
+  border: 1px solid white;
+  padding:10px;
+  margin: 10px auto;
+  width: 95%; */
+  /* align-items: center; */
+  /* justify-content: center; */
+
+
+  /* .captain{
+    display: flex;
+    flex-direction: column-reverse;
+    
+    width: 1000px;
+    height: 500px;
+    border: 3px solid black;
+    margin:auto;
+
+  }
+
+  .scattola{
+    display: flex;
+     flex-direction: row; 
+    
+    justify-content: left;
+    width: 150px;
+    height: 150px;
+    border: 3px solid red;
+    margin:auto;
+    padding: auto;
+    
+  } */
+
+ 
