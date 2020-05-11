@@ -4,11 +4,17 @@ margin: 0;
 padding: 0;
 }
 
+
 body{
 background-color: #00d4ff;
-/* max-width: 375px; */
 margin: auto;
 }
+
+
+.container{
+
+}
+
 
 .banner{
   /* display: none; */
@@ -17,12 +23,14 @@ margin: auto;
   max-height: 200px;
 }
 
+
 header{
   display: flex;
   justify-content: center;
   width: 90%;
   margin: auto;
 }
+
 
 h1{
   position: relative;
@@ -52,6 +60,7 @@ is true.*/
  
 }
 
+
  .menu{
   display: flex;
   border: 1px solid white; 
@@ -78,6 +87,7 @@ is true.*/
   
 }
 
+
 .wrapper{
   position: relative;
   display: grid;
@@ -85,7 +95,10 @@ is true.*/
   grid-template-rows: 20vh;
   height: 105px;
   width: 30%;
+  
+  
 }
+
 
 .wrapper > div {
   margin: auto;
@@ -93,13 +106,13 @@ is true.*/
 
 
 h6 {
-  /* margin-top: 25px; */
   font-style: italic;
   color: #00d4ff;
   text-align: center;
   font-size: 18px;
   line-height: 25px;
 }
+
 
 .steps{
   display: grid;
@@ -113,11 +126,13 @@ h6 {
   flex-direction: column; */
 }
 
+
 .steps > div:nth-child(odd){
   background: #ddd;
   max-width: 100%;
   max-height: 100%;
 }
+
 
 .img-col{
   vertical-align: middle;
@@ -128,6 +143,7 @@ h6 {
   
 }
 
+
 .text-col{
   /* display: inline; */
   color: black;
@@ -135,6 +151,7 @@ h6 {
   line-height: 4px;
   display: inline;
 }
+
 
 main {
 max-width: 350px;
@@ -147,6 +164,7 @@ padding: 15px;
 color: black; 
 }
 
+
  .topRow {
   display: flex;
   justify-content: space-evenly;
@@ -156,12 +174,14 @@ color: black;
   
 }
 
+
 .secondRow{
   display: flex;
   justify-content: space-evenly; 
   color: black;
   
 } 
+
 
 .box{
 display: flex;
@@ -174,11 +194,13 @@ border: 1px solid white;
 /* box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5); */
 }
 
+
 #img-tango{
   background-image: url(/Users/crivellos/Documents/Coding@StE/UDACITY/Ud_project01/assets/Tango_history.jpg);
   background-size: 115%;
   background-repeat: no-repeat;
 }
+
 
 #img-music{
   background-image: url(/Users/crivellos/Documents/Coding@StE/UDACITY/Ud_project01/assets/Tango_music.jpeg);
@@ -187,11 +209,13 @@ border: 1px solid white;
 
 }
 
+
 #img-dancing{
   background-image: url(/Users/crivellos/Documents/Coding@StE/UDACITY/Ud_project01/assets/Tango_dancers.jpeg);
   background-size: 105%;
   background-repeat: no-repeat;
 }
+
 
 #img-band{
   background-image: url(/Users/crivellos/Documents/Coding@StE/UDACITY/Ud_project01/assets/Tango_band.jpg);
@@ -200,12 +224,14 @@ border: 1px solid white;
 
 }
 
+
 #img-culture{
   background-image: url(/Users/crivellos/Documents/Coding@StE/UDACITY/Ud_project01/assets/Tango_culture.jpeg);
   background-size: 130%;
   background-repeat: no-repeat;
 
 }
+
 
 #img-shoes{
   background-image: url(/Users/crivellos/Documents/Coding@StE/UDACITY/Ud_project01/assets/heel_images.jpg);
@@ -239,6 +265,7 @@ border: 1px solid white;
 
 }
 
+
 footer{
 display: flex;
 text-align: center;
@@ -247,33 +274,77 @@ text-align: center;
 
 
 
-
-
-
-
 @media only screen and (min-width: 768px){
 
   .banner{
     display: block;
     width: 100%;
-    padding-bottom: 30px;
+    
   }
 
   .wrapper{
-    display: block;
-    left: 0;
+    display: flex;
+    padding: 15px 10px 45px 0px;
     width: 100%;
-    padding: 20px auto; 
-    /* margin: 0 auto; */
+    align-items: center;
+     
+}
+
+header{
+display: flex;
+
+}
+
+h1{
+  display: flex;
+  padding: 70px;
+  font-size: 60px;
+  height: 500px;
+
+}
+
+h6{
+  font-size: 35px;
+  margin-top: 50px;
+  display: flexbox;
+  justify-content: center;
+  line-height: 42px;
+}
+
+nav{
+  padding-top: 30px;
 }
 
   .intro{
-    /* display: flex; */
-    width: 100%;
-    float: left;
+    display: inline-block;
+    width: 99%;
+    height: 185px;
+   
+  }
+
+
+  .combo{
+    display: flexbox;
+    justify-content: center;
+    /* align-items: center; */
+
+    height: 80px;
+  }
+
+  .combo > steps{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
 
   }
 
+  
+
+  main{
+    margin: auto;
+    padding-top: 65px;
+    padding-bottom: 45px;
+  }
 
 
 
