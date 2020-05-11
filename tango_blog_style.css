@@ -1,0 +1,280 @@
+*{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+margin: 0;
+padding: 0;
+}
+
+body{
+background-color: #00d4ff;
+/* max-width: 375px; */
+margin: auto;
+}
+
+.banner{
+  /* display: none; */
+  position: absolute;
+  max-width: 110%;
+  max-height: 200px;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+h1{
+  position: relative;
+  display: flexbox;
+  align-items: center;
+  margin: 15px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 26px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 30px 55px 30px 55px;
+  max-height: 20px;
+}
+
+
+/* media statement tells the CSS file only 
+to run the code if the what is in the { } 
+is true.*/
+
+
+.bar{
+  display: flex;
+  font-size: 10px;
+  border: 1px solid white; 
+ 
+}
+
+ .menu{
+  display: flex;
+  border: 1px solid white; 
+  padding: 10px 8px 10px 8px;
+  margin: auto;
+  align-items: center;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+
+.intro{
+  display: flex;
+  width: 100%;
+  height: 120px;
+  align-items: center;
+  padding-right: 2px;
+  color: black;
+  line-height: 16px;
+  background-image: url(/Users/crivellos/Documents/Coding@StE/UDACITY/Ud_project01/assets/Tango_shoes.jpeg);
+  background-repeat: no-repeat;
+
+    background-size: cover;  
+  
+}
+
+.wrapper{
+  position: relative;
+  display: grid;
+  grid-template-columns: 45vw 55vw;
+  grid-template-rows: 20vh;
+  height: 105px;
+  width: 30%;
+}
+
+.wrapper > div {
+  margin: auto;
+}
+
+
+h6 {
+  /* margin-top: 25px; */
+  font-style: italic;
+  color: #00d4ff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.steps{
+  display: grid;
+  grid-template-columns: 60vw;
+  /* grid-template-columns: 16vw 40vw; */
+  grid-template-rows: 6vh 6vh 6vh;
+  color:black;
+  background: #eee;
+  margin: auto;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.steps > div:nth-child(odd){
+  background: #ddd;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.img-col{
+  vertical-align: middle;
+  width: 20px;
+  height: 30px;
+  padding: 4px;
+  margin: auto;
+  
+}
+
+.text-col{
+  /* display: inline; */
+  color: black;
+  font-size: 10px;
+  line-height: 4px;
+  display: inline;
+}
+
+main {
+max-width: 350px;
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+margin-top: 15px;
+padding: 15px;
+color: black; 
+}
+
+ .topRow {
+  display: flex;
+  justify-content: space-evenly;
+  height: 80px;
+  color: white;
+
+  
+}
+
+.secondRow{
+  display: flex;
+  justify-content: space-evenly; 
+  color: black;
+  
+} 
+
+.box{
+display: flex;
+height: 80px;
+width: 320px;
+align-items: center;
+justify-content: center;
+border: 1px solid white;
+
+/* box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5); */
+}
+
+#img-tango{
+  background-image: url(/Users/crivellos/Documents/Coding@StE/UDACITY/Ud_project01/assets/Tango_history.jpg);
+  background-size: 115%;
+  background-repeat: no-repeat;
+}
+
+#img-music{
+  background-image: url(/Users/crivellos/Documents/Coding@StE/UDACITY/Ud_project01/assets/Tango_music.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+#img-dancing{
+  background-image: url(/Users/crivellos/Documents/Coding@StE/UDACITY/Ud_project01/assets/Tango_dancers.jpeg);
+  background-size: 105%;
+  background-repeat: no-repeat;
+}
+
+#img-band{
+  background-image: url(/Users/crivellos/Documents/Coding@StE/UDACITY/Ud_project01/assets/Tango_band.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+
+}
+
+#img-culture{
+  background-image: url(/Users/crivellos/Documents/Coding@StE/UDACITY/Ud_project01/assets/Tango_culture.jpeg);
+  background-size: 130%;
+  background-repeat: no-repeat;
+
+}
+
+#img-shoes{
+  background-image: url(/Users/crivellos/Documents/Coding@StE/UDACITY/Ud_project01/assets/heel_images.jpg);
+  background-size: 100%;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+ 
+
+}
+
+
+.ddd{
+  /* background-color: red; */
+  background: #ddd;
+}
+
+.eee{
+  background: #eee;
+}
+
+/* .blue{
+  background-color: blue;
+} */
+
+.social{
+  display: inline;
+  max-width: 8%;
+  max-height: 8%;
+  margin: 25px;
+  justify-content: center;
+
+}
+
+footer{
+display: flex;
+text-align: center;
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px){
+
+  .banner{
+    display: block;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .wrapper{
+    display: block;
+    left: 0;
+    width: 100%;
+    padding: 20px auto; 
+    /* margin: 0 auto; */
+}
+
+  .intro{
+    /* display: flex; */
+    width: 100%;
+    float: left;
+
+  }
+
+
+
+
+}
