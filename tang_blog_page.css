@@ -1,0 +1,163 @@
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+  margin: 0;
+  padding: 0;
+  }
+  
+  
+  body{
+  position: relative;
+  width:100%;
+  background-color: #00d4ff;
+  min-height: 100vh;
+
+  }
+
+  header{
+    display: flex;
+    background-image: url("/Users/crivellos/Documents/Coding@StE/UDACITY/Ud_project01/assets/Tango_header.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    background-position-y: bottom;
+  
+  }
+  
+  
+  h1{
+    margin: 15px;
+    margin-top: 20px;
+    font-size: 26px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 30px 55px 30px 55px;
+  
+  }
+  
+  
+  /* media statement tells the CSS file only 
+  to run the code if the what is in the { } 
+  is true.*/
+  
+  
+  .bar{
+    display: flex;
+    font-size: 10px;
+   
+  }
+  
+  
+   .menu{
+    display: flex;
+    border: 1px solid white; 
+    padding: 10px 8px 10px 8px;
+    margin: auto;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 4px
+
+  }
+
+  .post-area{
+    position: relative;
+    
+  }
+
+
+ h3{
+   text-align: center;
+ }
+
+
+  input[type=text]{
+    width: 170px;
+    height: 150px;
+    padding: 10px;
+    margin-left: 90px;
+    border: 1px solid white; 
+    /* padding-left: 50px; */
+
+  }
+
+
+
+
+  .social{
+    max-width: 8%;
+    max-height: 8%;
+    margin: 25px;
+  
+  }
+  
+  
+  footer{
+  text-align: center;
+  padding: 1px;
+  position: relative;
+  bottom: 0px;
+  
+  }
+
+
+  @media only screen and (min-width: 768px){
+
+
+    h1{
+      font-size: 60px;
+      padding: 80px 120px 80px 120px;
+    
+    }
+    
+    .menu{
+      padding: 20px;
+      font-size: 18px;
+
+    }
+
+    input[type=text]{
+    width: 270px;
+    height: 250px;
+    padding: 10px;
+    margin-left: 240px;
+    }
+  }
+
+
+  @media only screen and (min-width: 1200px) and (max-width: 1680px){
+
+
+    h1{
+      padding: 85px 140px 85px 140px;
+      width: 70%;
+      text-align: center;
+    
+    }
+  
+    .bar{
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+    }
+  
+    .menu{
+      padding: 20px;
+      font-size: 18px;
+
+    }
+
+    input[type=text]{
+      width: 390px;
+      height: 350px;
+      padding: 10px;
+      margin-left: 430px;
+      }
+
+
+  }
+  
+
+  

@@ -2,67 +2,52 @@
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
 margin: 0;
 padding: 0;
-}
 
+}
 
 body{
 background-color: #00d4ff;
-margin: auto;
-}
-
-
-.container{
-
-}
-
-
-.banner{
-  /* display: none; */
-  position: absolute;
-  max-width: 110%;
-  max-height: 200px;
+width:100%;
 }
 
 
 header{
   display: flex;
+  background-image: url("/Users/crivellos/Documents/Coding@StE/UDACITY/Ud_project01/assets/Tango_header.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
   justify-content: center;
-  width: 90%;
+  width: 100%;
   margin: auto;
+  background-position-y: bottom;
+
 }
 
 
 h1{
-  position: relative;
-  display: flexbox;
-  align-items: center;
   margin: 15px;
   margin-top: 20px;
-  text-align: center;
   font-size: 26px;
   color: white;
   border: 1px solid white;
   border-radius: 10px;
   padding: 30px 55px 30px 55px;
-  max-height: 20px;
+
+  
+
 }
-
-
-/* media statement tells the CSS file only 
-to run the code if the what is in the { } 
-is true.*/
 
 
 .bar{
   display: flex;
-  font-size: 10px;
-  border: 1px solid white; 
  
 }
 
 
  .menu{
   display: flex;
+  font-size: 10px;
   border: 1px solid white; 
   padding: 10px 8px 10px 8px;
   margin: auto;
@@ -75,15 +60,13 @@ is true.*/
 .intro{
   display: flex;
   width: 100%;
-  height: 120px;
   align-items: center;
   padding-right: 2px;
   color: black;
-  line-height: 16px;
   background-image: url(/Users/crivellos/Documents/Coding@StE/UDACITY/Ud_project01/assets/Tango_shoes.jpeg);
   background-repeat: no-repeat;
-
-    background-size: cover;  
+  background-size: cover;  
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
   
 }
 
@@ -93,15 +76,8 @@ is true.*/
   display: grid;
   grid-template-columns: 45vw 55vw;
   grid-template-rows: 20vh;
-  height: 105px;
-  width: 30%;
+  height: 135px;
   
-  
-}
-
-
-.wrapper > div {
-  margin: auto;
 }
 
 
@@ -111,19 +87,22 @@ h6 {
   text-align: center;
   font-size: 18px;
   line-height: 25px;
+
 }
 
 
 .steps{
   display: grid;
-  grid-template-columns: 60vw;
-  /* grid-template-columns: 16vw 40vw; */
-  grid-template-rows: 6vh 6vh 6vh;
+  /*2 elements in the 1 column below, 2nd elemn text-col display: inline*/
+  grid-template-columns: 54vw;
+  grid-template-rows: 1fr 1fr 1fr;
   color:black;
+  height: 133px;
+  width: 1fr;
   background: #eee;
   margin: auto;
-  /* display: flex;
-  flex-direction: column; */
+  flex-direction: column;
+  
 }
 
 
@@ -131,37 +110,36 @@ h6 {
   background: #ddd;
   max-width: 100%;
   max-height: 100%;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.combo{
+  height: 44px;
+
 }
 
 
 .img-col{
   vertical-align: middle;
-  width: 20px;
-  height: 30px;
-  padding: 4px;
-  margin: auto;
+  width: 34px;
+  height: 44px;
   
 }
 
 
 .text-col{
-  /* display: inline; */
+  display: inline;
   color: black;
   font-size: 10px;
-  line-height: 4px;
-  display: inline;
+  
 }
 
 
 main {
-max-width: 350px;
-display: flex;
-flex-direction: column;
-text-align: center;
-justify-content: center;
-margin-top: 15px;
-padding: 15px;
+margin: 10px 10px 20px 10px;
 color: black; 
+
 }
 
 
@@ -170,7 +148,6 @@ color: black;
   justify-content: space-evenly;
   height: 80px;
   color: white;
-
   
 }
 
@@ -190,8 +167,7 @@ width: 320px;
 align-items: center;
 justify-content: center;
 border: 1px solid white;
-
-/* box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5); */
+box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 
@@ -238,114 +214,226 @@ border: 1px solid white;
   background-size: 100%;
   margin-bottom: 50px;
   background-repeat: no-repeat;
- 
 
 }
 
 
-.ddd{
-  /* background-color: red; */
+#ddd{
   background: #ddd;
 }
 
-.eee{
+#eee{
   background: #eee;
 }
 
-/* .blue{
-  background-color: blue;
-} */
 
 .social{
-  display: inline;
   max-width: 8%;
   max-height: 8%;
   margin: 25px;
-  justify-content: center;
 
 }
 
 
 footer{
-display: flex;
 text-align: center;
 
 }
 
 
 
+
+
+
+
 @media only screen and (min-width: 768px){
 
-  .banner{
-    display: block;
-    width: 100%;
-    
-  }
-
-  .wrapper{
-    display: flex;
-    padding: 15px 10px 45px 0px;
-    width: 100%;
-    align-items: center;
-     
-}
-
-header{
-display: flex;
-
-}
 
 h1{
-  display: flex;
-  padding: 70px;
   font-size: 60px;
-  height: 500px;
+  padding: 80px 120px 80px 120px;
 
+}
+
+.intro{
+  height: 180%;
+ 
+}
+
+.menu{
+  padding: 20px;
+  font-size: 18px;
+
+}
+
+
+.wrapper{
+  display: flex;
+  margin: 60px 0px 20px 0px;
+  /* padding: 15px 10px 45px 0px; */
+  width: 100%;
+  align-items: center;
+   
 }
 
 h6{
   font-size: 35px;
-  margin-top: 50px;
-  display: flexbox;
+  margin-top: 5px;
   justify-content: center;
   line-height: 42px;
+
 }
 
-nav{
-  padding-top: 30px;
-}
 
-  .intro{
-    display: inline-block;
-    width: 99%;
-    height: 185px;
-   
+  .steps{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 180%;
+    margin: 0px 0px 0px 0px;
+
   }
 
 
   .combo{
     display: flexbox;
     justify-content: center;
-    /* align-items: center; */
-
     height: 80px;
   }
 
-  .combo > steps{
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
-
+  .img-col{
+    vertical-align: middle;
+    width: 66px;
+    height: 60px;
+    height: 105%;
+    
   }
 
-  
-
   main{
-    margin: auto;
-    padding-top: 65px;
+    margin: 15px;
+    padding: 60px;
+    padding-top: 45px;
     padding-bottom: 45px;
   }
 
+  .box{
+    height: 180px;
+    align-items: center;
+    border: 1px solid white;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5);
+
+    }
+
+    .secondRow{
+      margin-top: 65px;
+    }
 
 
 }
+
+
+/* @media only screen and (min-width: 991px) and (max-width: 1199px){
+
+} */
+
+@media only screen and (min-width: 1200px) and (max-width: 1680px){
+
+
+  h1{
+    padding: 85px 140px 85px 140px;
+    width: 70%;
+    text-align: center;
+  
+  }
+
+  .bar{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .menu{
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .intro{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 40px;
+      
+    }
+
+    
+    .wrapper{
+      display: flex;
+      height: 135px;
+      grid-gap: 0;
+      grid-template-rows: 100vw;
+      grid-template-columns: 100vh;
+      padding: 20px 0px 80px 0px;
+      box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5);
+      
+       
+    }
+
+
+    .steps{
+      /* grid-template-columns: 50vw 40vw; */
+      display: inline;
+      height: 302px;
+      width: 68%;
+      
+  
+    }
+
+    .combo{
+      height: 100px;
+      box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .img-col{
+      height: 101px;
+
+    }
+
+    .text-col{
+      padding: 10px;
+      font-size: 18px;
+    }
+
+
+    main{
+      padding: 50px;
+      padding-bottom: 250px;
+      max-width: 200%;
+      max-height: 450px;
+      margin-bottom: 100px;
+    }
+
+    .box{
+      height: 130px;
+      width: 285px;
+      padding: 15px;
+      margin: 15px;
+    }
+
+
+}
+
+/* .bar{
+  display: flex;
+ 
+}
+
+
+ .menu{
+  display: flex;
+  font-size: 10px;
+  border: 1px solid white; 
+  padding: 10px 8px 10px 8px;
+  margin: auto;
+  align-items: center;
+  margin-top: 15px;
+  border-radius: 4px;
+} */
